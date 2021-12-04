@@ -6,7 +6,7 @@ services:
     container_name: ozet-hybrid-proxy
     restart: "on-failure"
     ports:
-      - 10421:10421
+      - 10431:10431
     volumes:
       - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
   ozet-hybrid:
