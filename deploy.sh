@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /docker/ozet-web-docker
+cd /docker/ozet-hybrid-docker
 
 docker logout
 docker login -u ozetteam -p ozetword!
