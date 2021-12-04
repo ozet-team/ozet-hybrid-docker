@@ -1,17 +1,17 @@
 version: "3.3"
 
 services:
-  ozet-web-proxy:
+  ozet-hybrid-proxy:
     image: nginx:latest
-    container_name: ozet-web-proxy
+    container_name: ozet-hybrid-proxy
     restart: "on-failure"
     ports:
       - 10421:10421
     volumes:
       - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
-  ozet-web:
-    image: ozetteam/ozet-web
-    container_name: ozet-web
+  ozet-hybrid:
+    image: ozetteam/ozet-hybrid
+    container_name: ozet-hybrid
     restart: "on-failure"
     env_file:
       - "./.env"
